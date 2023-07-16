@@ -1,0 +1,7 @@
+--Данные о продажах в штатах США
+select state_province, 
+	   order_date, 
+	   quantity,
+	   sales
+from product_gallery
+where state_province is not null and country = 'США'
